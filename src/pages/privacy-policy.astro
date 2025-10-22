@@ -1,0 +1,121 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Centralis - Privacy Policy">
+  <Header />
+  <main class="pt-20 min-h-screen">
+    <section class="py-20 px-6 bg-gradient-to-b from-black to-gray-900">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 font-saira" data-i18n="privacy.title">
+          Privacy Policy
+        </h1>
+        <p class="text-gray-400 mb-12 font-manrope" data-i18n="privacy.lastUpdated">
+          Last updated: October 22, 2025
+        </p>
+
+        <div class="space-y-8 text-gray-300 font-manrope">
+          <div>
+            <h2 class="text-2xl font-bold text-purple-400 mb-4 font-saira" data-i18n="privacy.section1Title">
+              1. Information We Collect
+            </h2>
+            <p class="mb-4" data-i18n="privacy.section1Intro">
+              We collect information that you provide directly to us when using Centralis, including:
+            </p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li data-i18n="privacy.section1Item1">Account information (name, email, company details)</li>
+              <li data-i18n="privacy.section1Item2">Communication data (messages, announcements, event details)</li>
+              <li data-i18n="privacy.section1Item3">Usage information (app interactions, features used)</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-bold text-purple-400 mb-4 font-saira" data-i18n="privacy.section2Title">
+              2. How We Use Your Information
+            </h2>
+            <p class="mb-4" data-i18n="privacy.section2Intro">
+              We use the information we collect to:
+            </p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li data-i18n="privacy.section2Item1">Provide and maintain the Centralis service</li>
+              <li data-i18n="privacy.section2Item2">Improve and personalize your experience</li>
+              <li data-i18n="privacy.section2Item3">Communicate with you about updates and support</li>
+              <li data-i18n="privacy.section2Item4">Ensure security and prevent fraud</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-bold text-purple-400 mb-4 font-saira" data-i18n="privacy.section3Title">
+              3. Data Security
+            </h2>
+            <p data-i18n="privacy.section3Desc">
+              We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. All data is encrypted both in transit and at rest.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-bold text-purple-400 mb-4 font-saira" data-i18n="privacy.section4Title">
+              4. Data Sharing
+            </h2>
+            <p data-i18n="privacy.section4Desc">
+              We do not sell your personal information. We only share data with third parties when necessary to provide our services or when required by law.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-bold text-purple-400 mb-4 font-saira" data-i18n="privacy.section5Title">
+              5. Your Rights
+            </h2>
+            <p class="mb-4" data-i18n="privacy.section5Intro">
+              You have the right to:
+            </p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li data-i18n="privacy.section5Item1">Access your personal data</li>
+              <li data-i18n="privacy.section5Item2">Request correction of inaccurate data</li>
+              <li data-i18n="privacy.section5Item3">Request deletion of your data</li>
+              <li data-i18n="privacy.section5Item4">Object to processing of your data</li>
+              <li data-i18n="privacy.section5Item5">Export your data</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-bold text-purple-400 mb-4 font-saira" data-i18n="privacy.section6Title">
+              6. Contact Us
+            </h2>
+            <p data-i18n="privacy.section6Desc">
+              If you have any questions about this Privacy Policy or our data practices, please contact us through our support channels.
+            </p>
+          </div>
+
+          <div class="bg-purple-900/20 border border-purple-500/50 rounded-lg p-6 mt-12">
+            <p class="text-sm text-gray-400" data-i18n="privacy.disclaimer">
+              By using Centralis, you agree to this Privacy Policy. We may update this policy from time to time, and we will notify you of any significant changes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<script>
+  import { translate } from '../i18n/utils';
+
+  function updatePrivacyTranslations() {
+    const lang = localStorage.getItem('language') || 'en';
+    const elements = document.querySelectorAll('[data-i18n]');
+    
+    elements.forEach((el) => {
+      const key = el.getAttribute('data-i18n');
+      if (key) {
+        el.textContent = translate(lang, key);
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', updatePrivacyTranslations);
+  window.addEventListener('languagechange', updatePrivacyTranslations);
+</script>
