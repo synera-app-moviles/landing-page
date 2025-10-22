@@ -1,0 +1,52 @@
+---
+const imageUrl = "https://i.pinimg.com/736x/02/f6/45/02f6459ada4bb2ea095a648b06320c61.jpg";
+---
+
+<section class="hero-section min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden">
+  <!-- Background Gradient -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-purple-600 opacity-20 rounded-full blur-3xl"></div>
+  
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+    <!-- Text Content -->
+    <div class="space-y-6">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white font-saira leading-tight" data-i18n="hero.title">
+        Your company's communication, finally in one place.
+      </h1>
+      <p class="text-lg md:text-xl text-gray-300 font-manrope" data-i18n="hero.subtitle">
+        Centralis replaces the chaos of informal apps with a professional platform that integrates announcements, events and chats for your SME.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 pt-4">
+
+        <button class="btn-secondary px-8 py-4 border-2 border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white font-semibold rounded-lg transition-all duration-300" data-i18n="hero.ctaSecondary">
+          Discover the Platform
+        </button>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div class="relative">
+      <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-purple-500/20">
+        <img src={imageUrl} alt="Centralis Platform" class="w-full h-auto object-cover" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { translate } from '../../i18n/utils';
+
+  function updateHeroTranslations() {
+    const lang = localStorage.getItem('language') || 'en';
+    const elements = document.querySelectorAll('.hero-section [data-i18n]');
+    
+    elements.forEach((el) => {
+      const key = el.getAttribute('data-i18n');
+      if (key) {
+        el.textContent = translate(lang, key);
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', updateHeroTranslations);
+  window.addEventListener('languagechange', updateHeroTranslations);
+</script>

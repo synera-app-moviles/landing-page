@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Centralis - Help Center">
+  <Header />
+  <main class="pt-20 min-h-screen">
+    <section class="py-20 px-6 bg-gradient-to-b from-black to-gray-900">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-12 text-center font-saira" data-i18n="helpCenter.title">
+          Help Center
+        </h1>
+
+        <div class="space-y-8">
+          <!-- FAQ Item 1 -->
+          <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-purple-500 transition-colors">
+            <h3 class="text-xl font-bold text-purple-400 mb-3 font-saira" data-i18n="helpCenter.faq1Title">
+              What is Centralis?
+            </h3>
+            <p class="text-gray-300 font-manrope" data-i18n="helpCenter.faq1Desc">
+              Centralis is a professional communication platform designed specifically for small and medium enterprises. It centralizes announcements, events, and team chats in one secure mobile application.
+            </p>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-purple-500 transition-colors">
+            <h3 class="text-xl font-bold text-purple-400 mb-3 font-saira" data-i18n="helpCenter.faq2Title">
+              What platforms does Centralis support?
+            </h3>
+            <p class="text-gray-300 font-manrope" data-i18n="helpCenter.faq2Desc">
+              Centralis is available as a native mobile application for both Android and iOS devices.
+            </p>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-purple-500 transition-colors">
+            <h3 class="text-xl font-bold text-purple-400 mb-3 font-saira" data-i18n="helpCenter.faq3Title">
+              How can I request a demo?
+            </h3>
+            <p class="text-gray-300 font-manrope" data-i18n="helpCenter.faq3Desc">
+              Please contact our team through the "Request a Demo" button on the homepage. We'll be happy to show you how Centralis can transform your company's communication.
+            </p>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-purple-500 transition-colors">
+            <h3 class="text-xl font-bold text-purple-400 mb-3 font-saira" data-i18n="helpCenter.faq4Title">
+              Is my data secure?
+            </h3>
+            <p class="text-gray-300 font-manrope" data-i18n="helpCenter.faq4Desc">
+              Yes! We take data security very seriously. All communications are encrypted and stored securely. Your company's information is completely private and protected.
+            </p>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-purple-500 transition-colors">
+            <h3 class="text-xl font-bold text-purple-400 mb-3 font-saira" data-i18n="helpCenter.faq5Title">
+              What features are included?
+            </h3>
+            <p class="text-gray-300 font-manrope" data-i18n="helpCenter.faq5Desc">
+              Centralis includes formal announcements and news distribution, event and meeting management, and professional group chats organized by departments or projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<script>
+  import { translate } from '../i18n/utils';
+
+  function updateHelpCenterTranslations() {
+    const lang = localStorage.getItem('language') || 'en';
+    const elements = document.querySelectorAll('[data-i18n]');
+    
+    elements.forEach((el) => {
+      const key = el.getAttribute('data-i18n');
+      if (key) {
+        el.textContent = translate(lang, key);
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', updateHelpCenterTranslations);
+  window.addEventListener('languagechange', updateHelpCenterTranslations);
+</script>

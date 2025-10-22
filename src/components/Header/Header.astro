@@ -1,0 +1,67 @@
+---
+import Title from '../Title.astro';
+import TranslatedText from '../TranslatedText.astro';
+import LanguageDropdown from './LanguageDropdown.astro';
+import MobileMenu from './MobileMenu.astro';
+---
+
+<header class="header fixed top-0 left-0 right-0 z-40 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <a href="/" class="hover:opacity-80 transition-opacity">
+        <Title />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="/product" class="text-white hover:text-purple-400 transition-colors font-semibold">
+          <TranslatedText keyPath="header.product" />
+        </a>
+        <span class="text-gray-500">|</span>
+        <a href="/about-team" class="text-white hover:text-purple-400 transition-colors font-semibold">
+          <TranslatedText keyPath="header.team" />
+        </a>
+        <span class="text-gray-500">|</span>
+        <a href="/help-center" class="text-white hover:text-purple-400 transition-colors font-semibold">
+          <TranslatedText keyPath="header.faq" />
+        </a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="flex items-center gap-4">
+        <div class="hidden md:block">
+          <LanguageDropdown />
+        </div>
+        <MobileMenu />
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  function initStickyHeader() {
+    const header = document.querySelector('.header');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+
+      if (currentScroll > 100) {
+        header?.classList.add('bg-black', 'border-b', 'border-gray-800', 'shadow-lg');
+      } else {
+        header?.classList.remove('bg-black', 'border-b', 'border-gray-800', 'shadow-lg');
+      }
+
+      lastScroll = currentScroll;
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initStickyHeader);
+</script>
+
+<style>
+  .header {
+    backdrop-filter: blur(10px);
+  }
+</style>

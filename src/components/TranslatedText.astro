@@ -1,0 +1,31 @@
+---
+interface Props {
+  keyPath: string;
+}
+
+const { keyPath } = Astro.props;
+---
+
+<span data-i18n={keyPath}></span>
+
+<script>
+  import { translate } from '../i18n/utils';
+
+  function updateTranslations() {
+    const lang = localStorage.getItem('language') || 'en';
+    const elements = document.querySelectorAll('[data-i18n]');
+    
+    elements.forEach((el) => {
+      const key = el.getAttribute('data-i18n');
+      if (key) {
+        el.textContent = translate(lang, key);
+      }
+    });
+  }
+
+  // Update on load
+  document.addEventListener('DOMContentLoaded', updateTranslations);
+
+  // Update on language change
+  window.addEventListener('languagechange', updateTranslations);
+</script>
