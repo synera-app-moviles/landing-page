@@ -3,7 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const imageUrl = "https://i.pinimg.com/736x/02/f6/45/02f6459ada4bb2ea095a648b06320c61.jpg";
+const imageUrl = "https://res.cloudinary.com/df8xwy4xb/image/upload/v1761641578/image_14_jdqa3v.svg";
+const imageUrl1 = "https://res.cloudinary.com/df8xwy4xb/image/upload/v1761637093/event_e5a7th.svg";
+const imageUrl2 = "https://res.cloudinary.com/df8xwy4xb/image/upload/v1761641395/grups_dddhn4.svg";
 ---
 
 <Layout title="Centralis - Product Features">
@@ -93,7 +95,7 @@ const imageUrl = "https://i.pinimg.com/736x/02/f6/45/02f6459ada4bb2ea095a648b063
             </ul>
           </div>
           <div class="order-1 md:order-2">
-            <img src={imageUrl} alt="Events" class="w-full rounded-2xl shadow-2xl" />
+            <img src={imageUrl1} alt="Events" class="w-full rounded-2xl shadow-2xl" />
           </div>
         </div>
       </div>
@@ -104,7 +106,7 @@ const imageUrl = "https://i.pinimg.com/736x/02/f6/45/02f6459ada4bb2ea095a648b063
       <div class="max-w-7xl mx-auto">
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <img src={imageUrl} alt="Chats" class="w-full rounded-2xl shadow-2xl" />
+            <img src={imageUrl2} alt="Chats" class="w-full rounded-2xl shadow-2xl" />
           </div>
           <div class="space-y-6">
             <h2 class="text-3xl md:text-4xl font-bold text-purple-400 font-saira" data-i18n="product.chatsTitle">
@@ -174,3 +176,4 @@ const imageUrl = "https://i.pinimg.com/736x/02/f6/45/02f6459ada4bb2ea095a648b063
   document.addEventListener('DOMContentLoaded', updateProductTranslations);
   window.addEventListener('languagechange', updateProductTranslations);
 </script>
+
