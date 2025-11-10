@@ -1,0 +1,79 @@
+---
+const imageUrl = "https://res.cloudinary.com/df8xwy4xb/image/upload/v1761647061/b1_phamwt.png"
+const imageUrl1 = "https://res.cloudinary.com/df8xwy4xb/image/upload/v1761647062/b2_jomqmj.png"
+const imageUrl2 = "https://res.cloudinary.com/df8xwy4xb/image/upload/v1761647066/b3_h0gxbq.png"
+---
+
+<section class="solution-section py-20 px-6 bg-black">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 font-saira" data-i18n="solution.title">
+        Introducing Centralis: The all-in-one platform.
+      </h2>
+      <p class="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto font-manrope" data-i18n="solution.description">
+        Centralis is a mobile application designed by Synera startup to centralize and simplify internal communication. We offer an intuitive, powerful and organized alternative.
+      </p>
+    </div>
+
+    <!-- Benefits Grid -->
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Benefit 1 -->
+      <div class="benefit-card bg-gradient-to-br from-purple-900/30 to-gray-900 p-8 rounded-2xl border border-purple-500/30 hover:border-purple-500 transition-all duration-300 transform hover:-translate-y-2">
+        <div class="mb-6">
+          <img src={imageUrl} alt="Productivity" class="w-full h-48 object-cover rounded-lg" />
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-3 font-saira" data-i18n="solution.benefit1Title">
+          Improves Productivity
+        </h3>
+        <p class="text-gray-300 font-manrope" data-i18n="solution.benefit1Desc">
+          Less time searching for information, more time working.
+        </p>
+      </div>
+
+      <!-- Benefit 2 -->
+      <div class="benefit-card bg-gradient-to-br from-purple-900/30 to-gray-900 p-8 rounded-2xl border border-purple-500/30 hover:border-purple-500 transition-all duration-300 transform hover:-translate-y-2">
+        <div class="mb-6">
+          <img src={imageUrl1} alt="Transparency" class="w-full h-48 object-cover rounded-lg" />
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-3 font-saira" data-i18n="solution.benefit2Title">
+          Promotes Transparency
+        </h3>
+        <p class="text-gray-300 font-manrope" data-i18n="solution.benefit2Desc">
+          A single channel for everyone to stay informed.
+        </p>
+      </div>
+
+      <!-- Benefit 3 -->
+      <div class="benefit-card bg-gradient-to-br from-purple-900/30 to-gray-900 p-8 rounded-2xl border border-purple-500/30 hover:border-purple-500 transition-all duration-300 transform hover:-translate-y-2">
+        <div class="mb-6">
+          <img src={imageUrl2} alt="Culture" class="w-full h-48 object-cover rounded-lg" />
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-3 font-saira" data-i18n="solution.benefit3Title">
+          Strengthens Culture
+        </h3>
+        <p class="text-gray-300 font-manrope" data-i18n="solution.benefit3Desc">
+          Separates work from personal life and improves collaboration.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { translate } from '../../i18n/utils';
+
+  function updateSolutionTranslations() {
+    const lang = localStorage.getItem('language') || 'en';
+    const elements = document.querySelectorAll('.solution-section [data-i18n]');
+    
+    elements.forEach((el) => {
+      const key = el.getAttribute('data-i18n');
+      if (key) {
+        el.textContent = translate(lang, key);
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', updateSolutionTranslations);
+  window.addEventListener('languagechange', updateSolutionTranslations);
+</script>

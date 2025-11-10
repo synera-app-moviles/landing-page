@@ -1,0 +1,179 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const imageUrl = "https://res.cloudinary.com/df8xwy4xb/image/upload/v1761641578/image_14_jdqa3v.svg";
+const imageUrl1 = "https://res.cloudinary.com/df8xwy4xb/image/upload/v1761637093/event_e5a7th.svg";
+const imageUrl2 = "https://res.cloudinary.com/df8xwy4xb/image/upload/v1761641395/grups_dddhn4.svg";
+---
+
+<Layout title="Centralis - Product Features">
+  <Header />
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="py-20 px-6 bg-gradient-to-b from-black to-gray-900">
+      <div class="max-w-6xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-saira" data-i18n="product.heroTitle">
+          Features designed for your company.
+        </h1>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto font-manrope" data-i18n="product.heroSubtitle">
+          Discover how Centralis unifies communication flow in a native mobile application for Android and iOS.
+        </p>
+      </div>
+    </section>
+
+    <!-- Announcements Module -->
+    <section class="py-20 px-6 bg-black">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <img src={imageUrl} alt="Announcements" class="w-full rounded-2xl shadow-2xl" />
+          </div>
+          <div class="space-y-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-purple-400 font-saira" data-i18n="product.announcementsTitle">
+              Vital information that always reaches its destination.
+            </h2>
+            <p class="text-lg text-gray-300 font-manrope" data-i18n="product.announcementsDesc">
+              Publish news and formal announcements in a dedicated space. Ideal for communications that cannot be lost in a chat.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-purple-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-300 font-manrope" data-i18n="product.announcementsFeature1">Formal broadcast channel.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-purple-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-300 font-manrope" data-i18n="product.announcementsFeature2">Read confirmations to ensure reception.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-purple-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-300 font-manrope" data-i18n="product.announcementsFeature3">Targeted to managers who need a secure channel.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Module -->
+    <section class="py-20 px-6 bg-gradient-to-b from-gray-900 to-black">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6 order-2 md:order-1">
+            <h2 class="text-3xl md:text-4xl font-bold text-purple-400 font-saira" data-i18n="product.eventsTitle">
+              Organize meetings and trainings without chaos.
+            </h2>
+            <p class="text-lg text-gray-300 font-manrope" data-i18n="product.eventsDesc">
+              Centralize the creation and management of all company events. Reduce time spent on logistical coordination.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-purple-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-300 font-manrope" data-i18n="product.eventsFeature1">Creation of meetings and trainings.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-purple-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-300 font-manrope" data-i18n="product.eventsFeature2">Automatic reminders to reduce absenteeism.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-purple-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-300 font-manrope" data-i18n="product.eventsFeature3">Ideal for hybrid or remote teams.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="order-1 md:order-2">
+            <img src={imageUrl1} alt="Events" class="w-full rounded-2xl shadow-2xl" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chats Module -->
+    <section class="py-20 px-6 bg-black">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <img src={imageUrl2} alt="Chats" class="w-full rounded-2xl shadow-2xl" />
+          </div>
+          <div class="space-y-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-purple-400 font-saira" data-i18n="product.chatsTitle">
+              Ordered collaboration. 100% work-related.
+            </h2>
+            <p class="text-lg text-gray-300 font-manrope" data-i18n="product.chatsDesc">
+              Allows the creation of flexible and personalized work groups, completely separating personal communication from professional.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-purple-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-300 font-manrope" data-i18n="product.chatsFeature1">Groups by departments, teams or projects.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-purple-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-300 font-manrope" data-i18n="product.chatsFeature2">A secure and exclusive environment for work.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-purple-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-300 font-manrope" data-i18n="product.chatsFeature3">The professional alternative to informal applications.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scope Section -->
+    <section class="py-20 px-6 bg-gradient-to-b from-gray-900 to-black">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 font-saira" data-i18n="product.scopeTitle">
+          Focused on the essentials.
+        </h2>
+        <p class="text-lg text-gray-300 mb-4 font-manrope" data-i18n="product.scopeDesc">
+          Centralis is a native mobile application for Android and iOS. Our initial focus is on announcements, events and chats.
+        </p>
+        <p class="text-gray-400 italic font-manrope" data-i18n="product.scopeNote">
+          To maintain simplicity and efficiency, features like video calls, file storage or a web version are not included in the initial scope.
+        </p>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<script>
+  import { translate } from '../i18n/utils';
+
+  function updateProductTranslations() {
+    const lang = localStorage.getItem('language') || 'en';
+    const elements = document.querySelectorAll('[data-i18n]');
+    
+    elements.forEach((el) => {
+      const key = el.getAttribute('data-i18n');
+      if (key) {
+        el.textContent = translate(lang, key);
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', updateProductTranslations);
+  window.addEventListener('languagechange', updateProductTranslations);
+</script>
+

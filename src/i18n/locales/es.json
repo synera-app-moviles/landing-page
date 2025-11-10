@@ -1,0 +1,134 @@
+{
+  "header": {
+    "title": "CENTRALIS",
+    "product": "Producto",
+    "team": "Equipo",
+    "faq": "FAQ",
+    "language": "Idioma",
+    "account": "Cuenta"
+  },
+  "hero": {
+    "title": "La comunicación de tu empresa, por fin en un solo lugar.",
+    "subtitle": "Centralis reemplaza el caos de las apps informales por una plataforma profesional que integra anuncios, eventos y chats para tu pyme.",
+    "ctaPrimary": "Solicita una Demo",
+    "ctaSecondary": "Descubre la Plataforma"
+  },
+  "problem": {
+    "title": "¿Tu comunicación interna está fragmentada?",
+    "description": "Muchas pymes luchan con la desorganización. La información vital se pierde en grupos de WhatsApp, se mezcla la vida personal con la laboral, y las herramientas corporativas son demasiado complejas o costosas.",
+    "pain1": "Pérdida de información importante.",
+    "pain2": "Falta de un canal formal para anuncios.",
+    "pain3": "Dificultad para organizar reuniones y eventos.",
+    "pain4": "Desconexión entre gerentes y empleados."
+  },
+  "solution": {
+    "title": "Te presentamos Centralis: La plataforma todo-en-uno.",
+    "description": "Centralis es una aplicación móvil diseñada por la startup Synera para centralizar y simplificar la comunicación interna. Ofrecemos una alternativa intuitiva, poderosa y organizada.",
+    "benefit1Title": "Mejora la Productividad",
+    "benefit1Desc": "Menos tiempo buscando información, más tiempo trabajando.",
+    "benefit2Title": "Fomenta la Transparencia",
+    "benefit2Desc": "Un canal único para que todos estén informados.",
+    "benefit3Title": "Fortalece la Cultura",
+    "benefit3Desc": "Separa el trabajo de la vida personal y mejora la colaboración."
+  },
+  "features": {
+    "title": "Características Principales",
+    "subtitle": "Esta sección es un vistazo rápido que enlaza a la página de Producto.",
+    "feature1Title": "Anuncios y Noticias",
+    "feature1Desc": "Un espacio formal para publicar anuncios vitales y asegurar que lleguen a todos.",
+    "feature2Title": "Gestión de Eventos",
+    "feature2Desc": "Crea y gestiona reuniones, capacitaciones y eventos corporativos fácilmente.",
+    "feature3Title": "Chats Grupales",
+    "feature3Desc": "Grupos de trabajo flexibles por departamento o proyecto, 100% profesionales.",
+    "ctaSecondary": "Conoce todas las funciones"
+  },
+  "segments": {
+    "title": "¿Para quién es?",
+    "managersTitle": "Para Gerentes y Líderes",
+    "managersDesc": "Un canal formal para difundir información, organizar actividades y asegurar que tu equipo reciba los comunicados.",
+    "employeesTitle": "Para Empleados",
+    "employeesDesc": "Un espacio colaborativo y oficial para comunicarte, sin mezclar tu vida personal con la profesional y sin perder información importante."
+  },
+  "ctaFinal": {
+    "title": "Simplifica tu comunicación hoy mismo.",
+    "description": "Deja atrás la desorganización y convierte la comunicación interna en una ventaja para tu empresa.",
+    "cta": "Solicitar una Demo"
+  },
+  "product": {
+    "heroTitle": "Funcionalidades diseñadas para tu empresa.",
+    "heroSubtitle": "Descubre cómo Centralis unifica el flujo de comunicación en una aplicación móvil nativa para Android e iOS.",
+    "announcementsTitle": "Información vital que siempre llega a destino.",
+    "announcementsDesc": "Publica noticias y anuncios formales en un espacio dedicado. Ideal para comunicados que no pueden perderse en un chat.",
+    "announcementsFeature1": "Canal formal de difusión.",
+    "announcementsFeature2": "Confirmaciones de lectura para asegurar la recepción.",
+    "announcementsFeature3": "Dirigido a gerentes que necesitan un canal seguro.",
+    "eventsTitle": "Organiza reuniones y capacitaciones sin caos.",
+    "eventsDesc": "Centraliza la creación y gestión de todos los eventos de la empresa. Reduce el tiempo dedicado a la coordinación logística.",
+    "eventsFeature1": "Creación de reuniones y capacitaciones.",
+    "eventsFeature2": "Recordatorios automáticos para reducir el absentismo.",
+    "eventsFeature3": "Ideal para equipos híbridos o remotos.",
+    "chatsTitle": "Colaboración ordenada. 100% laboral.",
+    "chatsDesc": "Permite la creación de grupos de trabajo flexibles y personalizados, separando completamente la comunicación personal de la profesional.",
+    "chatsFeature1": "Grupos por departamentos, equipos o proyectos.",
+    "chatsFeature2": "Un entorno seguro y exclusivo para el trabajo.",
+    "chatsFeature3": "La alternativa profesional a las aplicaciones informales.",
+    "scopeTitle": "Enfocados en lo esencial.",
+    "scopeDesc": "Centralis es una aplicación móvil nativa para Android e iOS. Nuestro enfoque inicial se centra en anuncios, eventos y chats.",
+    "scopeNote": "Para mantener la simpleza y eficiencia, funciones como videollamadas, almacenamiento de archivos o una versión web no están incluidas en el alcance inicial."
+  },
+  "team": {
+    "title": "Conoce a Nuestro Equipo",
+    "subtitle": "Las personas talentosas detrás de Centralis",
+    "description": "Somos Synera, una startup dedicada a construir soluciones que mejoren la comunicación interna para pymes.",
+    "role": "Desarrollador",
+    "githubProfile": "Perfil de GitHub"
+  },
+  "footer": {
+    "product": "Producto",
+    "aboutTeam": "Equipo",
+    "helpCenter": "FAQ",
+    "privacy": "Política de Privacidad"
+  },
+  "helpCenter": {
+    "title": "Centro de Ayuda",
+    "faq1Title": "¿Qué es Centralis?",
+    "faq1Desc": "Centralis es una plataforma de comunicación profesional diseñada específicamente para pequeñas y medianas empresas. Centraliza anuncios, eventos y chats de equipo en una aplicación móvil segura.",
+    "faq2Title": "¿Qué plataformas soporta Centralis?",
+    "faq2Desc": "Centralis está disponible como una aplicación móvil nativa para dispositivos Android e iOS.",
+    "faq3Title": "¿Cómo puedo solicitar una demo?",
+    "faq3Desc": "Por favor contacta a nuestro equipo a través del botón \"Solicita una Demo\" en la página principal. Estaremos encantados de mostrarte cómo Centralis puede transformar la comunicación de tu empresa.",
+    "faq4Title": "¿Mis datos están seguros?",
+    "faq4Desc": "¡Sí! Nos tomamos muy en serio la seguridad de los datos. Todas las comunicaciones están cifradas y almacenadas de forma segura. La información de tu empresa es completamente privada y protegida.",
+    "faq5Title": "¿Qué funciones están incluidas?",
+    "faq5Desc": "Centralis incluye distribución formal de anuncios y noticias, gestión de eventos y reuniones, y chats grupales profesionales organizados por departamentos o proyectos."
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: 22 de octubre de 2025",
+    "section1Title": "1. Información que Recopilamos",
+    "section1Intro": "Recopilamos información que nos proporcionas directamente al usar Centralis, incluyendo:",
+    "section1Item1": "Información de cuenta (nombre, email, detalles de la empresa)",
+    "section1Item2": "Datos de comunicación (mensajes, anuncios, detalles de eventos)",
+    "section1Item3": "Información de uso (interacciones con la app, funciones utilizadas)",
+    "section2Title": "2. Cómo Usamos tu Información",
+    "section2Intro": "Usamos la información que recopilamos para:",
+    "section2Item1": "Proporcionar y mantener el servicio de Centralis",
+    "section2Item2": "Mejorar y personalizar tu experiencia",
+    "section2Item3": "Comunicarnos contigo sobre actualizaciones y soporte",
+    "section2Item4": "Garantizar la seguridad y prevenir fraudes",
+    "section3Title": "3. Seguridad de Datos",
+    "section3Desc": "Implementamos medidas técnicas y organizativas apropiadas para proteger tu información personal contra acceso no autorizado, alteración, divulgación o destrucción. Todos los datos están cifrados tanto en tránsito como en reposo.",
+    "section4Title": "4. Compartir Datos",
+    "section4Desc": "No vendemos tu información personal. Solo compartimos datos con terceros cuando es necesario para proporcionar nuestros servicios o cuando lo requiere la ley.",
+    "section5Title": "5. Tus Derechos",
+    "section5Intro": "Tienes derecho a:",
+    "section5Item1": "Acceder a tus datos personales",
+    "section5Item2": "Solicitar corrección de datos inexactos",
+    "section5Item3": "Solicitar eliminación de tus datos",
+    "section5Item4": "Oponerte al procesamiento de tus datos",
+    "section5Item5": "Exportar tus datos",
+    "section6Title": "6. Contáctanos",
+    "section6Desc": "Si tienes alguna pregunta sobre esta Política de Privacidad o nuestras prácticas de datos, por favor contáctanos a través de nuestros canales de soporte.",
+    "disclaimer": "Al usar Centralis, aceptas esta Política de Privacidad. Podemos actualizar esta política de vez en cuando, y te notificaremos de cualquier cambio significativo."
+  }
+}

@@ -1,11 +1,24 @@
 ---
-
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Header from '../components/Header/Header.astro';
+import Footer from '../components/Footer.astro';
+import Section1 from '../components/Home/Section1.astro';
+import Section2 from '../components/Home/Section2.astro';
+import Section3 from '../components/Home/Section3.astro';
+import Section4 from '../components/Home/Section4.astro';
+import Section5 from '../components/Home/Section5.astro';
+import Section6 from '../components/Home/Section6.astro';
 ---
 
-<Layout>
-	
+<Layout title="Centralis - Your company's communication in one place">
+	<Header />
+	<main class="pt-20">
+		<Section1 />
+		<Section2 />
+		<Section3 />
+		<Section4 />
+		<Section5 />
+		<Section6 />
+	</main>
+	<Footer />
 </Layout>

@@ -1,0 +1,50 @@
+---
+import Title from './Title.astro';
+---
+
+<footer class="bg-black border-t border-gray-800 py-8 px-6">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    <!-- Logo -->
+    <a href="/" class="hover:opacity-80 transition-opacity">
+      <Title />
+    </a>
+
+    <!-- Navigation Links -->
+    <nav class="flex flex-wrap items-center justify-center gap-3 md:gap-6">
+      <a href="/product" class="text-gray-400 hover:text-white transition-colors" data-i18n="footer.product">
+        Product
+      </a>
+      <span class="text-gray-600">|</span>
+      <a href="/about-team" class="text-gray-400 hover:text-white transition-colors" data-i18n="footer.aboutTeam">
+        Team
+      </a>
+      <span class="text-gray-600">|</span>
+      <a href="/help-center" class="text-gray-400 hover:text-white transition-colors" data-i18n="footer.helpCenter">
+        FAQ
+      </a>
+      <span class="text-gray-600">|</span>
+      <a href="/privacy-policy" class="text-gray-400 hover:text-white transition-colors" data-i18n="footer.privacy">
+        Privacy Policy
+      </a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  import { translate } from '../i18n/utils';
+
+  function updateFooterTranslations() {
+    const lang = localStorage.getItem('language') || 'en';
+    const elements = document.querySelectorAll('footer [data-i18n]');
+    
+    elements.forEach((el) => {
+      const key = el.getAttribute('data-i18n');
+      if (key) {
+        el.textContent = translate(lang, key);
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', updateFooterTranslations);
+  window.addEventListener('languagechange', updateFooterTranslations);
+</script>

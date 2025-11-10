@@ -1,0 +1,38 @@
+---
+---
+
+<section class="cta-final-section py-32 px-6 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+  <!-- Background Effect -->
+  <div class="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-pink-600/10"></div>
+  
+  <div class="max-w-4xl mx-auto text-center relative z-10">
+    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-saira" data-i18n="ctaFinal.title">
+      Simplify your communication today.
+    </h2>
+    <p class="text-xl md:text-2xl text-gray-300 mb-10 font-manrope" data-i18n="ctaFinal.description">
+      Leave disorganization behind and turn internal communication into an advantage for your company.
+    </p>
+    <button class="px-12 py-5 bg-purple-600 hover:bg-purple-700 text-white text-xl font-bold rounded-lg transition-all duration-300 transform hover:scale-110 shadow-2xl shadow-purple-500/50 font-saira" data-i18n="ctaFinal.cta">
+      Request a Demo
+    </button>
+  </div>
+</section>
+
+<script>
+  import { translate } from '../../i18n/utils';
+
+  function updateCtaFinalTranslations() {
+    const lang = localStorage.getItem('language') || 'en';
+    const elements = document.querySelectorAll('.cta-final-section [data-i18n]');
+    
+    elements.forEach((el) => {
+      const key = el.getAttribute('data-i18n');
+      if (key) {
+        el.textContent = translate(lang, key);
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', updateCtaFinalTranslations);
+  window.addEventListener('languagechange', updateCtaFinalTranslations);
+</script>
