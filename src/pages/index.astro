@@ -19,6 +19,30 @@ import Section6 from '../components/Home/Section6.astro';
 		<Section4 />
 		<Section5 />
 		<Section6 />
+		
+		<!-- Product Demo Video Section -->
+		<section class="py-20 px-6 bg-gradient-to-b from-gray-900 to-black">
+			<div class="max-w-4xl mx-auto text-center">
+				<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 font-saira" data-i18n="product.video.title">
+					See Centralis in Action
+				</h2>
+				<p class="text-lg text-gray-300 mb-12 max-w-2xl mx-auto font-manrope" data-i18n="product.video.description">
+					Watch our product demo to see how Centralis transforms your company's communication.
+				</p>
+				
+				<!-- YouTube Video Embed -->
+				<div class="relative aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-purple-500/20 bg-gray-800">
+					<iframe 
+						src="https://www.youtube.com/embed/pj9MuNyfGec" 
+						title="Centralis Product Demo" 
+						frameborder="0" 
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+						allowfullscreen
+						class="absolute inset-0 w-full h-full"
+					></iframe>
+				</div>
+			</div>
+		</section>
 	</main>
 	<Footer />
 </Layout>

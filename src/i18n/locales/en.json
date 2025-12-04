@@ -74,14 +74,22 @@
     "chatsFeature3": "The professional alternative to informal applications.",
     "scopeTitle": "Focused on the essentials.",
     "scopeDesc": "Centralis is a native mobile application for Android and iOS. Our initial focus is on announcements, events and chats.",
-    "scopeNote": "To maintain simplicity and efficiency, features like video calls, file storage or a web version are not included in the initial scope."
+    "scopeNote": "To maintain simplicity and efficiency, features like video calls, file storage or a web version are not included in the initial scope.",
+    "video": {
+      "title": "See Centralis in Action",
+      "description": "Watch our product demo to see how Centralis transforms your company's communication."
+    }
   },
   "team": {
     "title": "Meet Our Team",
     "subtitle": "The talented people behind Centralis",
     "description": "We are Synera, a startup dedicated to building solutions that improve internal communication for SMEs.",
     "role": "Developer",
-    "githubProfile": "GitHub Profile"
+    "githubProfile": "GitHub Profile",
+    "video": {
+      "title": "Meet the Team Behind Centralis",
+      "description": "Get to know the passionate developers and creators who make Centralis possible."
+    }
   },
   "footer": {
     "product": "Product",
